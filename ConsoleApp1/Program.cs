@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-public class Program
+public class Program // <-
 {
     public static void Main(string[] args)
     {
@@ -15,6 +15,7 @@ public class Program
         {
             sum += num;
         }
+        
         return (double)sum / array.Length;
     }
 }
