@@ -14,13 +14,13 @@ public class Program // <-
 
     public static double CalculateAverage(int[] array)
     {
-        int sum = 0;
+        int sum123 = 0;
         foreach (int num in array)
         {
-            sum += num;
+            sum123 += num;
         }
         
-        return (double)sum / array.Length;
+        return (double)sum123 / array.Length;
     }
     
     // Function to find maximum number in the array
