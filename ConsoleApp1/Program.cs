@@ -4,8 +4,12 @@ public class Program // <-
     public static void Main(string[] args)
     {
         int[] numbers = { 1, 2, 3, 4, 5 };
+        
         double average = CalculateAverage(numbers);
         Console.WriteLine("Average: " + average);
+        
+        int max = FindMax(numbers);
+        Console.WriteLine("Maximum value: " + max);
     }
 
     public static double CalculateAverage(int[] array)
@@ -17,5 +21,20 @@ public class Program // <-
         }
         
         return (double)sum / array.Length;
+    }
+    
+    public static int FindMax(int[] array)
+    {
+        int max = array[0];
+        
+        foreach (int num in array)
+        {
+            if (num > max)
+            {
+                max = num;
+            }
+        }
+
+        return max;
     }
 }
