@@ -23,6 +23,7 @@ public class Program // <-
         return (double)sum / array.Length;
     }
     
+    // Function to find maximum number in the array
     public static int FindMax(int[] array)
     {
         int max = array[0];
